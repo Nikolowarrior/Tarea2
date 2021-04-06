@@ -1,0 +1,107 @@
+﻿<html>
+<meta charset="utf-8">
+<meta name="description" content="ACTIVIDAD EVALUATIVA ICI4240 INGENIERÍA WEB"/>
+<meta name="author" content="Nicolás Poblete" />
+<head>
+	<link rel="stylesheet" type="text/css" href="reset.css">	
+	<link rel="stylesheet" type="text/css" href="info-web.css"/>
+	<title>Info-WEB Nicolás Poblete</title>
+</head>
+<body onload="submit();">
+<script src="submit.ts"></script> 
+<br/>
+<div id="formulario" class="formulario">
+	<br/>
+	<h1>Info-WEB</h1>
+	<br/>
+	<form action="info-web.html" id="form" method="get">
+		<table align="center">
+			<tr>
+				<td>
+					Nombre(s):
+				</td>
+				<td>
+					<input type="text" name="nombres" id="nombres" size="30" required title="Nombre(s) de pila" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Apellidos:
+				</td>
+				<td>
+					<input type="text" name="apellidos" size="30" required title="Apellidos, paterno y materno" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					RUT:
+				</td>
+				<td>
+					<input type="text" name="rut" size="20" required  pattern="[1-9][0-9]{6,7}[-][0-9kK]" title="RUT sin puntos, con guión y dígito verificador" />
+					&nbsp;&nbsp;&nbsp;
+					Sin puntos, con guión y dígito verificador
+				</td>
+			</tr>
+			<tr>
+				<td>
+					eMail:
+				</td>
+				<td>
+					<input type="email" name=""email" size="50" required title="Correo Electrónico" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Lenguajes:
+				</td>
+				<td>
+					<input type="checkbox" name="python"     />Python<br/>
+					<input type="checkbox" name="java"       />Java<br/>
+					<input type="checkbox" name="typescript" />TypeScript<br/>
+					<input type="checkbox" name="php"        />PHP<br/>
+					<input type="checkbox" name="c#"         />C#<br/>
+					<input type="checkbox" name="c++"        />C++<br/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Conocimiento en Programación:
+				</td>
+				<td>
+					<input type="range" name="conocprog" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Experiencia laboral (años):
+				</td>
+				<td>
+					<input type="radio" name="experiencia" checked/>1<br>
+					<input type="radio" name="experiencia" />2<br>
+					<input type="radio" name="experiencia" />3<br>
+					<input type="radio" name="experiencia" />4<br>
+					<input type="radio" name="experiencia" />5<br>
+				</td>
+			</tr>
+				<td colspan="2" align="center">
+					Descripción Breve de Usted:<br/>
+					<textarea name="descripcion" required title="Descripción Breve de Usted" cols="80" rows="4" maxlength="300"></textarea>
+				</td>
+			</tr>
+
+		</table>
+		<br/>
+		<input type="reset" value="Limpiar" />
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" value="Enviar" />
+	</form>
+</div>
+<div id="datosRecibidos" class="datosRecibidos">
+	<br/>
+	<h1>Info-WEB</h1>
+	<br/>
+	Hemos recibido sus datos, pronto nos estaremos comunicando con usted.
+	<br/>
+</div>
+</body>
+</html>

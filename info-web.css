@@ -1,0 +1,24 @@
+﻿div.formulario {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	width: 90%;
+	height: auto;
+	margin: auto;
+    text-align:center;
+	border: 3px solid darkgray;
+	visibility: visible;
+}
+
+div.datosRecibidos {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	width: 90%;
+	height: 200px;
+	margin: auto;
+    text-align:center;
+	border: 3px solid darkgray;
+	visibility: hidden;
+}
+
+td {
+	height: 40px;
+	vertical-align: super;
+}
